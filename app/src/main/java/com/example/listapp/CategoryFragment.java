@@ -1,17 +1,22 @@
 package com.example.listapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -25,6 +30,8 @@ public class CategoryFragment extends Fragment implements RecyclerAdapter.Catego
     public void CategoryIsClicked(Categories category) {
         ListenerObject.CategoryIsTapped(category);
     }
+
+
 
     interface OnCategoryInteractionListener{
        void CategoryIsTapped(Categories category);

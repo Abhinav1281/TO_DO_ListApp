@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements CategoryFragment.
 
     private void Toaster(String s)
     {
-        Toast.makeText(getApplicationContext(),s,Toast.LENGTH_SHORT).show();
+
     }
 
     private void displayCreateCategory()

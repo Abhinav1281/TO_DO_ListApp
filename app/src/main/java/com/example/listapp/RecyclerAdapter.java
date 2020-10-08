@@ -15,6 +15,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
     interface CategoryClickInterface
     {
         void CategoryIsClicked(Categories category);
+
+
     }
 
    private ArrayList<Categories> categories;
@@ -45,6 +47,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
                 categoryClickListener.CategoryIsClicked(categories.get(position));
             }
         });
+
     }
 
     @Override
